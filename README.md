@@ -2,6 +2,8 @@
 
 A Class that helps you work with Database drivers such as PDO and MySQLi. You just need to select easily what kind of driver you would like to work.
 
+https://travis-ci.org/amiretemad/PHP-Database-Drivers-Factory.svg?branch=master
+
 <h1>Initilize</h1>
 
 ```PHP
