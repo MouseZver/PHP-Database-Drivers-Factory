@@ -9,6 +9,7 @@ A Class that helps you work with Database drivers such as PDO and MySQLi. You ju
 include("dbFactory.php");
 // Include Drivers
 include("drivers/pdodb.php");
+include("drivers/mysqlidb.php");
 
 try {
   // Create Object
