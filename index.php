@@ -9,11 +9,11 @@
 // Load DB factory class
 include("dbFactory.php");
 include("drivers/pdodb.php");
+include("drivers/mysqlidb.php");
 
 try {
-  $db = dbFactory::getInstance('localhost', 'laravel', '123456', 'laravel');
-  $info = $db->getSingleData("SELECT * FROM student WHERE firstname = ? ", array("asd"));
-
+  $db = dbFactory::getInstance('localhost', 'laravel', '123456', 'laravel','mysqlidb');
+  $info = $db->getData("SELECT * FROM student where firstname = ?" , array("amir"));
   var_dump($info);
 } catch (Exception $ex) {
   echo($ex->getMessage());
